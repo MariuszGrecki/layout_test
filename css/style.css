@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --green-color: #00cc00;
+    --white-color: white;
+    --grey-color: #595959;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+
+}
+p {
+    margin-bottom: 0;
+}
+
+/*Header  *****************************************************************************************/
+
+.top {
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+}   
+.top__inside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.top__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top__language {
+    display: flex;
+    margin-bottom: 0;
+}
+.top__language__select{ 
+    padding-right: calc(0.2rem + 1.5vw);
+}
+.top__language__select:hover{ 
+    color: var(--green-color);
+}
+.top__contact {
+    margin-bottom: 0;
+    color: var(--green-color);
+}
+.top__login {
+    padding-right: calc(0.2rem + 1.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.top__login:hover {
+    color: var(--white-color);
+    
+}
+.top__login__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.top__login__text:hover {
+    color: var(--white-color);
+    border-bottom: 6px solid var(--green-color);
+    
+}
+.fa-angle-right {
+    padding-left: calc(0.05rem + 1.5vw);
+}
+.top__right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group {
+    height: 100%;
+}
+.form-control  {
+    background-color: #212529;
+    width: calc(4rem + 1.5vw);
+    border: none;
+    height: 100%;
+}
+.form-control:focus  {
+    background-color: #212529;
+    outline:none;
+}
+.input-group-text {
+    background-color: #212529;
+    border: none;
+    color: var(--white-color);
+    padding-right: calc(0.3rem + 1.5vw) ;
+
+}
+/*Nawigacja ****************************************************************************************/
+.nav {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 3;
+}
+.fa-biking {
+    font-size: calc(10rem + 1.5vw);
+    padding-right: calc(8rem + 1.5vw);;
+}
+
+.nav__button {
+    font-weight: bold;;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: calc(12rem + 1.5vw);
+    padding-top: calc(2rem + 1.5vw);
+    color: black;
+    height: 28rem;
+    width: calc(12rem + 1.5vw);
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+    transition: width 1s;  
+}
+.nav__button:hover {
+    width: calc(15rem + 1.5vw);
+    color: var(--white-color);
+    border:none;
+    background-color: var(--green-color);
+}
+/*Karuzela*********************************************************************************************/
+.container-carousel {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 75%;
+}
+.owner {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.carousel__header {
+    font-size: calc(0.8rem + 5vw);
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel__header__second {
+    font-size: calc(0.8rem + 3vw);
+    font-weight: 100;
+    margin: 0;
+}
+
+.carousel-indicators {
+    left: auto;
+    margin-right: 5%;
+
+}
+.carousel__header__text {
+    font-size: calc(0.8rem + 1vw);
+    font-weight: 100;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+height: 8px;
+background-color: #212529;
+}
+
+.carousel-indicators .active {
+    background-color: var(--green-color);
+}
+.picture {
+    min-height: 350px;
+}
+.green__button__first {
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--green-color);
+    border: none;
+    color: var(--white-color);
+    font-size: calc(0.6rem + 1.5vw);
+    width: calc(15rem + 1.5vw);
+    height: calc(6rem + 1.5vw);
+    clip-path: polygon(7% 0, 100% 0, 100% 76%, 0 100%);
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+/*Sekcja z przejsciami do sklepu**********************************************************************/
+.skos {
+    width: 50%;
+    height: calc(4rem + 1.5vw);
+    background-color: var(--white-color);
+    z-index: 5;
+    position: relative;
+    top: -4rem;
+    clip-path: polygon(0 53%, 100% 0, 100% 100%, 0 100%);
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   padding-right: 10%;
+    padding-left: 10%;
+}
+.title__green {
+    color:var(--green-color);
+}
+.title__header {
+    padding-top: 5rem;   
+}
+.title__text {
+    padding-top: 2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+.title__small__header {
+    padding-top: 3rem;
+    
+}
+.bicycle {
+   
+    background-image: url("../image/cycling-828646_1920_optimized.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 460px;
+    position: relative; 
+    
+}
+.parts {
+    background-image: url("../image/mountain-bike-1149074_1920_optimized.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 460px;
+    position: relative;
+}
+.stuff {
+    background-image: url("../image/bicycle-691831_1920_optimized.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 460px;
+    position: relative;
+}
+.tips {
+    background-image: url("../image/bicycle-557046_1920_optimized.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    width: 460px;
+    position: relative;
+}
+.shop__title {
+    font-size: calc(2rem + 1.5vw);
+    color: var(--white-color)
+}
+
+.shop__title__inside {
+    display: none;
+}
+.shop__title__inside2 {
+    display: none;
+}
+.shop__title__inside3 {
+    display: none;
+}
+.shop__title__inside4 {
+    display: none;
+    
+}
+
+.visibility {
+    display: flex;
+    
+}
+
+.green__button {
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--green-color);
+    border: none;
+    opacity: 0.8;
+    color: var(--white-color);
+    font-size: calc(0.6rem + 1.5vw);
+    width: calc(25rem + 1.5vw);
+    height: calc(4rem + 1.5vw);
+    clip-path: polygon(4% 0, 100% 0, 100% 83%, 0 100%);
+    padding-top:0.5rem;
+    margin-top: 3rem;
+}
+
+/*Stopka**************************************************************************************************/
+.footer {
+    background-color: var(--grey-color);
+    width: 100%;
+    margin-top: calc(6rem + 1.5vw);
+}
+.footer__inside {
+    padding-top: calc(5rem + 1.5vw);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--white-color);
+}
+.footer__title {
+    font-weight: bold;
+}
+.footer__information {
+    padding-top: calc(0.05rem + 1vw);
+}
+.footer__title__newsletter {
+    font-weight: bold;
+    width: 80%;
+    padding-bottom: calc(0.7rem + 1.5vw);
+}
+.footer__input {
+    
+    padding-bottom: calc(0.7rem + 1.5vw);
+    width: 80%;
+    color: white;
+}
+.form__control__footer {
+    background-color: var(--grey-color);
+    height: calc(3rem + 1.5vw);
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: calc(0.5rem + 1.5vw);
+    color: white;
+}
+.btn__footer {
+    background-color: var(--white-color);
+    color: var(--grey-color);
+    height: calc(3rem + 1.5vw);
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 0;   
+}
+.footer__small__text {
+    color: #cccccc;
+    width: 80%;
+}
+.footer__our__community {
+    padding-top: calc(0.7rem + 1.5vw);
+    padding-bottom: calc(0.7rem + 1.5vw);
+    width: 80%;
+}
+.footer__icons {
+    width: 80%;
+}
+.footer__icon {
+    padding-right: calc(0.2rem + 1.5vw);
+    font-size: calc(2rem + 1.5vw);
+}
+.footer__title__kontakt {
+    padding-bottom: calc(0.2rem + 1.5vw);
+}
+.footer__kontakt {
+    padding-bottom: calc(0.05rem + 1.5vw);
+}
+.footer__span {
+    font-weight: bold;
+}
+.footer__telephone {
+    padding-top: calc(0.7rem + 1.5vw);
+    padding-bottom: calc(0.7rem + 1.5vw);
+}
+.footer__infolinia {
+    padding-top: calc(0.7rem + 1.5vw);
+    
+}
+.footer__email {
+    text-decoration: underline;
+}
+.footer__infolinia__number {
+    font-size: calc(2rem + 1.5vw);
+}
+.footer__border {
+    border-right: 1px solid #cccccc;
+    margin-right: calc(3rem + 1.5vw);
+    
+    
+}
+/*****************************************************************************/
+.dih {
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--grey-color);
+    height: calc(10rem + 1.5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
